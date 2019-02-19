@@ -1,0 +1,32 @@
+{
+  "name": "recipe_book",
+  "version": "1.0.0",
+  "description": "edamam API",
+  "main": "server.js",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^5.4.13",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/S-Haynes/RecipeBook.git"
+  },
+  "author": "S-Haynes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/S-Haynes/RecipeBook/issues"
+  },
+  "homepage": "https://github.com/S-Haynes/RecipeBook#readme"
+}
