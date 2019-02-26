@@ -10,7 +10,7 @@ const searchRoutes = require("./routes/search/search.js");
 const app = express();
 
 // set static folder
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "/public")));
 
 // body parser middleware
 app.use(bodyParser.urlencoded({ extended: false }));

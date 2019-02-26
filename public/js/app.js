@@ -6,7 +6,7 @@ class UI {
 
     axios
       .get(
-        `https://api.edamam.com/search?q=${searchTerm}&app_id=dbf86cd5&app_key=86999e439416cc6d0f9a9a3b54a21f4d`
+        `https://api.edamam.com/search?q=${searchTerm}&app_id=dbf86cd5&app_key=86999e439416cc6d0f9a9a3b54a21f4d&to=30`
       )
       .then(res => {
         UI.displaySearchedRecipes(res.data.hits);
@@ -20,8 +20,8 @@ class UI {
 
     recipes.forEach(recipe => {
       content += `
-      <a href="/search/${
-        recipe.recipe.label
+      <a href="/search/${recipe.recipe.label}/${
+        recipe.recipe.totalWeight
       }"><img class="col-3 mx-auto mt-4 mb-4 img-fluid" src="${
         recipe.recipe.image
       }"></img></a>

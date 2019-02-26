@@ -1,0 +1,10 @@
+<h1>{{recipe.recipe.label}}</h1>
+
+<div>
+  <img class="img-fluid" src={{recipe.recipe.image}} alt="image of your final product!">
+</div>
+
+<h3>Ingredients</h3>
+{{#each recipe.recipe.ingredientLines }}
+<p>{{this}}</p>
+{{/each}}

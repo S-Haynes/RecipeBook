@@ -1,3 +1,51 @@
-h1 {
-  color: steelblue;
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.bg__overlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.container.container__dark {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.header__content {
+  color: #fff;
+  font-size: 48px;
+  text-shadow: 5px 3px #333;
+}
+
+.logo {
+  width: 250px;
+  height: 60px;
+}
+
+.landing__bg {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -2;
+  background: url("../img/landingbg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-dark.navbar__transparent {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+}
+.text__white {
+  color: #fff;
+}
+
+.text__black {
+  color: #000;
 }
